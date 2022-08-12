@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "tintedbeacon",
+  "version": "${version}",
+  "name": "TintedBeacon",
+  "description": "Hides beacon beams with tinted glass",
+  "authors": [
+    "bishan_"
+  ],
+  "contact": {
+    "homepage": "bishan.app",
+    "email": "bishan.batel@gmail.com"
+  },
+  "license": "MIT",
+  "icon": "assets/tintedbeacon/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "app.bishan.tintedbeacon.client.TintedBeaconClient"
+    ],
+    "main": [
+      "app.bishan.tintedbeacon.TintedBeacon"
+    ]
+  },
+  "mixins": [
+    "tintedbeacon.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  },
+  "custom": {
+    "modmenu": {}
+  }
+}
